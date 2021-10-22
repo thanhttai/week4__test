@@ -541,7 +541,7 @@
             </table>
             <div class="class-code">
                 <code language="language-html">
-                    <span>&lt;img href="https://www.coderschool.png/" /&gt;</span>
+                    <span>&lt;img href="https://www.coderschool.png/" &gt;</span>
                 </code>
             </div>
 
@@ -622,7 +622,13 @@
                     <span>&lt;video width="320" height="240" controls&gt;&lt;source src="movie.mp4" type="video/mp4"&gt;&lt;video&gt;</span>
                 </code>
             </div>
+
+
         </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zl84TmLICMQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="margin-top-video"></iframe>
 
 
 
@@ -1131,6 +1137,7 @@
             </table>
             <div class="class-code">
                 <code>
+                    const fs = require('fs');
                     const data = [
                     {
                       id: 1,
@@ -1151,7 +1158,7 @@
                  <div>
                     function getData(data){
                         const result = JSON.stringify(data);
-                        fs.writeFileSync('db.json', data)
+                        fs.writeFileSync('db.json', result)
                     }
                  </div>
                 </code>
