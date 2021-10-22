@@ -1,4 +1,4 @@
-# Intermediate Restful API
+# Exam Coderschool week 4
 
 ## Description
 
