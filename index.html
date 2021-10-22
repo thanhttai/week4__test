@@ -6,13 +6,1158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="grid wide">
+        <div class="row">
+            <h1 class="heading">CoderSchool Test</h1>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-light bg-light mg-top-ques">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/photo.png" alt="" width="32" class="d-inline-block align-text-top">
+                        Question 1
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#1</th>
+                        <th>What is CLI?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>CLI is a command line program that accepts text input to execute operating system functions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>In the 1960s, using only computer terminals, this was the only way to interact with
+                            computers.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>In the 1970s an 1980s, command line input was commonly used by Unix systems and PC systems
+                            like MS-DOS and Apple DOS.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#2</th>
+                        <th>What is the advantage/disadvantage of CLI?</h3>
+                    </tr>
+                </thead>
+                <tbody>
 
+                    <tr>
+                        <th scope="row"></th>
+                        <td><strong>Advantages of command line interface (CLI)</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><span class="des">Fast performance:</span> CLI is an interface in which different text
+                            commands are written
+                            and then these commands are
+                            executed by the operating system. It is a text-based interface. CLI is most popular in the
+                            1960s when there was no GUI (graphical user interface) available for computers.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><span class="des">Less memory:</span>During the early days, there was no mouse
+                            available for the operating system and users only
+                            interact with the system by typing commands in CLI.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><strong>Disadvantages of command line interface (CLI)</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><span class="des">Difficult to remember:</span>It is difficult to remember all the commands
+                            used in the CLI. UNIX has more than 100 commands for CLI. Some commands are used with other
+                            commands and remembering the sequence of commands is also difficult.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><span class="des">Error handling:</span>If you write wrong commands by any typo then it may
+                            delete any file or move the file to the wrong location. If you accidentally delete any file
+                            then it creates a problem for you and maybe that file contains important information.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#3</th>
+                        <th>Which do you prefer, CLI or GUI (Graphical User Interface)? Why?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td>I prefer CLI because A command-line interface is user-friendly to a sophisticated user,
+                            while a
+                            graphical user interface is user-friendly to a newbie, but extremely user-unfriendly to a
+                            sophisticated user.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#4 </th>
+                        <th>Which command to check your current directory?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <div class="class-code">
+                <code>
+                   $ pwd
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#5 </th>
+                        <th>Which command to create a new folder/directory?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <div class="class-code">
+                <code>
+                   $ mkdir 
+                </code>
+            </div>
+
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#6 </th>
+                        <th>Which command to create a new file?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <div class="class-code">
+                <code>
+                   $ touch
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#7 </th>
+                        <th>You are in Desktop folder, which command to make a new directory name coderschool and
+                            navigate inside it?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <div class="class-code">
+                <code>
+                   $ cd coderschool/
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#8 </th>
+                        <th>Which command to delete a file?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <div class="class-code">
+                <code>
+                   $ rm
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#9 </th>
+                        <th>Which command to delete a not-empty folder?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <div class="class-code">
+                <code>
+                   $ rm -rf directoryname
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="grid wide">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light mg-top-ques">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/photo.png" alt="" width="32" class="d-inline-block align-text-top">
+                        Question 2
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#11 </th>
+                        <th>Which command to delete a not-empty folder?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                Add all folder not already
+            </p>
+            <div class="class-code">
+                <code>
+                   $ git add .
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#12 </th>
+                        <th>What does -m mean, is it OK without -m in this command:</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                This -m mean is message
+            </p>
+            <div class="class-code">
+                <code>
+                   $ git commit -m "first commit"
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#13 </th>
+                        <th>What does -M mean in this command:</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                This -M mean is change branch master
+            </p>
+            <div class="class-code">
+                <code>
+                   $ git branch -M main
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#14 </th>
+                        <th>What do origin and main mean in these commands:</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                `Origin` is set to `master` <br />
+                Main is change master to main
+            </p>
+            <div class="class-code">
+                <code>
+                   <div>$ git remote add origin https://github.com/<acc_name>/<repo_name>.git</div>
+                   <div>$ git push -u origin main</div>
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#15 </th>
+                        <th>Which command to initialize a git repo in local?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <div class="class-code">
+                <code>
+                   <div>$ git init</div>
+                   
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid wide">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light mg-top-ques">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/photo.png" alt="" width="32" class="d-inline-block align-text-top">
+                        Question 3
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#16 </th>
+                        <th>Inside head tag, what does first meta tag mean?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                Simply put, when you declare the "charset" as "UTF-8", you are telling your browser to use the UTF-8
+                character encoding, which is a method of converting your typed characters into machine-readable code.
+            </p>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#17 </th>
+                        <th>Inside head tag, what does second meta tag mean?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                This meta tags
+                to tell Microsoft Internet Explorer to use the
+                latest rendering engine (edge) and
+                UTF-8 to tell any browser that this file is UTF-8 encoded (assuming that you use this
+                encoding when editing or saving the file).
+            </p>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#18 </th>
+                        <th>Inside head tag, what is wrong with link tag?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                This mean just only bare minimum HTML is loaded and rendered.
+            </p>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#19 </th>
+                        <th>List some tags that do not have closing tag?
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <ol class="margin-left">
+                <li>img</li>
+                <li>br</li>
+                <li>input</li>
+                <li>hr</li>
+                <li>meta and etc...</li>
+            </ol>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#20 </th>
+                        <th>Give some contexts of using span tag?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <ul class="margin-left">
+                <li>Used for grouping and applying styles to inline elements.</li>
+                <li>Used with inline elements whilst the div tag is used with block-level content.</li>
+            </ul>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#21 </th>
+                        <th>Give 1 example of creating a hyperlink by a tag in html?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <div class="class-code">
+                <code language="language-html">
+                    <span>&lt;a href="https://www.coderschool.com/"&gt;Visit coderschool.com!&lt;a&gt;</span>
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#22 </th>
+                        <th>Give 1 example of inserting a picture in html? (answer with HTML code)</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <div class="class-code">
+                <code language="language-html">
+                    <span>&lt;img href="https://www.coderschool.png/" /&gt;</span>
+                </code>
+            </div>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#22 </th>
+                        <th>Give 1 example of creating an email link in html?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <div class="class-code">
+                <code language="language-html">
+                    <span>&lt;a href="mailto: coderschool.gmail.com"&gt;Visit gmail coderschool.com!&lt;a&gt;</span>
+                </code>
+            </div>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#23 </th>
+                        <th> Create a form similar to the below picture?</th>
+                    </tr>
+                </thead>
+
+            </table>
+            <form action="">
+                <label for="first_name">First Name</label>
+                <input type="text" placeholder="Tai" id="first_name">
+                <label for="last_name">Last Name</label>
+                <input type="text" placeholder="Ngo" id="last_name">
+                <input type="submit" class="submit">
+            </form>
+
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#24 </th>
+                        <th> Create a form similar to the below picture?</th>
+                    </tr>
+                </thead>
+
+            </table>
+            <form action="">
+                <label for="first_name">Female</label>
+                <input type="checkbox" placeholder="Tai" value="female" id="first_name">
+                <label for="last_name">Male</label>
+                <input type="checkbox" placeholder="Ngo" value="male" id="last_name">
+                <label for="other_name">Male</label>
+                <input type="checkbox" placeholder="Ngo" value="other" id="other_name">
+
+                <input type="submit" class="submit">
+            </form>
+
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#25 </th>
+                        <th>Give 1 example of creating an email link in html?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <div class="class-code">
+                <code language="language-html">
+                    <span>&lt;video width="320" height="240" controls&gt;&lt;source src="movie.mp4" type="video/mp4"&gt;&lt;video&gt;</span>
+                </code>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="grid wide">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light mg-top-ques">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/photo.png" alt="" width="32" class="d-inline-block align-text-top">
+                        Question 4
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#26 </th>
+                        <th>Give 1 example of creating an email link in html?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                The CSS Box Model is used to create a definition for the way the HTML elements are organized on the
+                screen. This approach accounts for options such as margins, padding, borders, and all the properties
+                that manipulate them.
+            </p>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#27 </th>
+                        <th>The value in inch of 1 px?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                Than 1 pixel = (1 / 96) inches. Finally we get the answer, there are 0.01041666666667 inches in a pixel.
+            </p>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#28 </th>
+                        <th>What is vw/vh?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                vh & vw. vh stands for viewport height and vw is for viewport width. Hence, setting an element to a
+                width value of 50vw means that the element will have a width that's 50% of the viewport size, and this
+                stays true when the viewport is resized.
+            </p>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#29 </th>
+                        <th>List all values of position property? Which one is default value?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">static</th>
+                        <td>Default value. Elements render in order, as they appear in the document flow
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">absolute</th>
+                        <td>The element is positioned relative to its first positioned (not static) ancestor element
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">fixed</th>
+                        <td>In the 1970s an 1980s, command line input was commonly used by Unix systems and PC systems
+                            like MS-DOS and Apple DOS.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">sticky</th>
+                        <td>The element is positioned based on the user's scroll position</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">initial</th>
+                        <td> Sets this property to its default value. Read about initial</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">inherit</th>
+                        <td>Inherits this property from its parent element. Read about inherit</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#30 </th>
+                        <th>List all values of flex-direction property? Which one is default value?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">row </th>
+                        <td>same as text direction (default)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">row-reverse</th>
+                        <td>opposite to text direction.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">column</th>
+                        <td>same as row but top to bottom.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">column-reverse</th>
+                        <td>same as row-reverse top to bottom.</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#31 </th>
+                        <th>List all values of justify-content property? Which one is default value?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">flex-start </th>
+                        <td>Default value. Items are positioned at the beginning of the container
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">flex-end</th>
+                        <td>Items are positioned at the end of the container
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">center</th>
+                        <td>Items are positioned in the center of the container</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">space-between</th>
+                        <td>Items will have space between them</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">space-around</th>
+                        <td>Items will have space before, between, and after them</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">space-evenly</th>
+                        <td>Items will have equal space around them</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">initial</th>
+                        <td>Sets this property to its default value. Read about initial</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">inherit</th>
+                        <td>Inherits this property from its parent element. Read about inherit</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#32 </th>
+                        <th> List all values of align-items property? Which one is default value?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">stretch </th>
+                        <td>Default. Items are stretched to fit the container
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">center</th>
+                        <td>Items are positioned at the center of the container
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">flex-start</th>
+                        <td>Items are positioned at the beginning of the container</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">flex-end</th>
+                        <td>Items are positioned at the end of the container</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">baseline</th>
+                        <td>Items are positioned at the baseline of the container</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">initial</th>
+                        <td>Items will have equal space around them</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">initial</th>
+                        <td>Sets this property to its default value. Read about initial</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">inherit</th>
+                        <td>Inherits this property from its parent element. Read about inherit</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#33 </th>
+                        <th>List all values of align-content property? Which one is default value?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">stretch </th>
+                        <td>Default. Items are stretched to fit the container
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">center</th>
+                        <td>Items are positioned at the center of the container
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">flex-start</th>
+                        <td>Items are positioned at the beginning of the container</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">flex-end</th>
+                        <td>Items are positioned at the end of the container</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">baseline</th>
+                        <td>Items are positioned at the baseline of the container</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">initial</th>
+                        <td>Items will have equal space around them</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">initial</th>
+                        <td>Sets this property to its default value. Read about initial</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">inherit</th>
+                        <td>Inherits this property from its parent element. Read about inherit</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#34 </th>
+                        <th>List all values of flex-wrap property? Which one is default value?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">nowrap </th>
+                        <td>Default value. Specifies that the flexible items will not wrap
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">wrap</th>
+                        <td>Specifies that the flexible items will wrap if necessary
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">wrap-reverse</th>
+                        <td>Specifies that the flexible items will wrap, if necessary, in reverse order</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">initial</th>
+                        <td>Sets this property to its default value. Read about initial</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">inherit</th>
+                        <td>Inherits this property from its parent element. Read about inherit</td>
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#36 </th>
+                        <th>List all values of align-content property? Which one is default value?</h3>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <p>
+
+                </p>
+            </table>
+
+
+            <div class="box-container">
+                <span class="box box1">1</span>
+                <span class="box box2">2</span>
+                <span class="box box3">3</span>
+            </div>
+        </div>
+    </div>
+    <div class="grid wide">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light mg-top-ques">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/photo.png" alt="" width="32" class="d-inline-block align-text-top">
+                        Question 5 Basic JavaScript (10%)
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#37 </th>
+                        <th>What does this code snippet do? Paste it to vscode, try to run and explain.</h3>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+
+            </table>
+            <p>
+                The code is in the for loop.Starting with i=3, the for loop will print i incremetally until the
+                condition is met, is less than 5
+            </p>
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#38 </th>
+                        <th>
+                        <th>What does this code snippet do? Paste it to vscode, try to run and explain.</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <p>
+                The code leak memory because you don't have a point end
+            </p>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#39 </th>
+                        <th>What does this code snippet do? Paste it to vscode, try to run and explain.</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+
+            </table>
+            <p>
+                The code is infinite loop. Starting with i =3 with no end point
+            </p>
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#40 </th>
+                        <th>Use for-loop to console log square numbers from 1 to 10.</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+
+            </table>
+            <div class="class-code">
+                <code>
+                    for (i = 0; i < 10; i++) {
+                        for (j = 0; j < 10; j++) {
+                            let result = i * j
+                            if (result / i === i) {
+                                console.log(result);
+                            }
+                        }
+                    
+                    }
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid wide">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light mg-top-ques">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/photo.png" alt="" width="32" class="d-inline-block align-text-top">
+                        Question 6 Advanced JavaScript (10%)
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#41 </th>
+                        <th>Write a function with input (argument) is an array, output (return) is one element from
+                            input with age is 21. Test with above array.</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+
+            </table>
+            <div class="class-code">
+                <code>
+                    const data = [
+                    {
+                      id: 1,
+                      name: "A",
+                      age: 20,
+                    },
+                    {
+                      id: 2,
+                      name: "B",
+                      age: 21,
+                    },
+                    {
+                      id: 3,
+                      name: "C",
+                      age: 22,
+                    },
+                  ];
+                 <div>
+                    function getData(data){
+                        return data.filter(e=>e.age===21)
+                    }
+                 </div>
+                </code>
+            </div>
+
+
+            <table class="table mg-top">
+                <thead>
+                    <tr>
+                        <th scope="col">#42 </th>
+                        <th>Write a function with input (argument) is an array, converts this array into json format and
+                            saves to db.json file. Test with above array.</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+
+            </table>
+            <div class="class-code">
+                <code>
+                    const data = [
+                    {
+                      id: 1,
+                      name: "A",
+                      age: 20,
+                    },
+                    {
+                      id: 2,
+                      name: "B",
+                      age: 21,
+                    },
+                    {
+                      id: 3,
+                      name: "C",
+                      age: 22,
+                    },
+                  ];
+                 <div>
+                    function getData(data){
+                        const result = JSON.stringify(data);
+                        fs.writeFileSync('db.json', data)
+                    }
+                 </div>
+                </code>
+            </div>
+        </div>
+    </div>
 
     <script src="./index.js"></script>
 </body>
